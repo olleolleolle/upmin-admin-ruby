@@ -11,13 +11,32 @@ body {
 }
 
 .btn {
-  @each $color in $color_list {
-    $name: nth($color, 1);
-    $hex: nth($color, 2);
-
-    &.btn-#{$name} {
-      @include button-variant(#fff, $hex, $hex);
-    }
+  &.btn-yellow {
+    @include button-variant(#fff, #F1C40F, #F1C40F);
+  }
+  &.btn-orange {
+    @include button-variant(#fff, #F39C12, #F39C12);
+  }
+  &.btn-red {
+    @include button-variant(#fff, #E74C3C, #E74C3C);
+  }
+  &.btn-dark_red {
+    @include button-variant(#fff, #AB3326, #AB3326);
+  }
+  &.btn-purple {
+    @include button-variant(#fff, #9B59B6, #9B59B6);
+  }
+  &.btn-dark_blue {
+    @include button-variant(#fff, #2C3E50, #2C3E50);
+  }
+  &.btn-light_blue {
+    @include button-variant(#fff, #3498DB, #3498DB);
+  }
+  &.btn-blue_green {
+    @include button-variant(#fff, #18BC9C, #18BC9C);
+  }
+  &.btn-green {
+    @include button-variant(#fff, #01C94F, #01C94F);
   }
 }
 
@@ -25,13 +44,32 @@ body {
   margin-right: 10px;
   font-weight: 500;
 
-  @each $color in $color_list {
-    $name: nth($color, 1);
-    $hex: nth($color, 2);
-
-    &.#{$name} {
-      background-color: $hex;
-    }
+  &.yellow {
+    background-color: #F1C40F;
+  }
+  &.orange {
+    background-color: #F39C12;
+  }
+  &.red {
+    background-color: #E74C3C;
+  }
+  &.dark_red {
+    background-color: #AB3326;
+  }
+  &.purple {
+    background-color: #9B59B6;
+  }
+  &.dark_blue {
+    background-color: #2C3E50;
+  }
+  &.light_blue {
+    background-color: #3498DB;
+  }
+  &.blue_green {
+    background-color: #18BC9C;
+  }
+  &.green {
+    background-color: #01C94F;
   }
 }
 
