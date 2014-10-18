@@ -13,23 +13,116 @@
   border-left-width: 5px;
   border-radius: 3px;
 
-  @each $color in $color_list {
-    $name: nth($color, 1);
-    $hex: nth($color, 2);
-
-    &.#{$name} {
-      border-left-color: $hex;
-      > h3, > h4 {
-        color: $hex;
-        > a {
-          color: $hex;
-        }
-        > a.delete {
-          color: #fff;
-        }
+  &.yellow {
+    border-left-color: #F1C40F;
+    > h3, > h4 {
+      color: #F1C40F;
+      > a {
+        color: #F1C40F;
+      }
+      > a.delete {
+        color: #fff;
       }
     }
   }
+  &.orange {
+    border-left-color: #F39C12;
+    > h3, > h4 {
+      color: #F39C12;
+      > a {
+        color: #F39C12;
+      }
+      > a.delete {
+        color: #fff;
+      }
+    }
+  }
+  &.red {
+    border-left-color: #E74C3C;
+    > h3, > h4 {
+      color: #E74C3C;
+      > a {
+        color: #E74C3C;
+      }
+      > a.delete {
+        color: #fff;
+      }
+    }
+  }
+  &.dark_red {
+    border-left-color: #AB3326;
+    > h3, > h4 {
+      color: #AB3326;
+      > a {
+        color: #AB3326;
+      }
+      > a.delete {
+        color: #fff;
+      }
+    }
+  }
+  &.purple {
+    border-left-color: #9B59B6;
+    > h3, > h4 {
+      color: #9B59B6;
+      > a {
+        color: #9B59B6;
+      }
+      > a.delete {
+        color: #fff;
+      }
+    }
+  }
+  &.dark_blue {
+    border-left-color: #2C3E50;
+    > h3, > h4 {
+      color: #2C3E50;
+      > a {
+        color: #2C3E50;
+      }
+      > a.delete {
+        color: #fff;
+      }
+    }
+  }
+  &.light_blue {
+    border-left-color: #3498DB;
+    > h3, > h4 {
+      color: #3498DB;
+      > a {
+        color: #3498DB;
+      }
+      > a.delete {
+        color: #fff;
+      }
+    }
+  }
+  &.blue_green {
+    border-left-color: #18BC9C;
+    > h3, > h4 {
+      color: #18BC9C;
+      > a {
+        color: #18BC9C;
+      }
+      > a.delete {
+        color: #fff;
+      }
+    }
+  }
+  &.green {
+    border-left-color: #01C94F;
+    > h3, > h4 {
+      color: #01C94F;
+      > a {
+        color: #01C94F;
+      }
+      > a.delete {
+        color: #fff;
+      }
+    }
+  }
+
+
 
   h3 {
     margin-top: 6px;
